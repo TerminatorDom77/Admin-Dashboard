@@ -15,7 +15,6 @@ nav {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     background-color: blue;
-    height: 100vh;
     font-weight: bold;
 }
 
@@ -81,7 +80,7 @@ header {
     grid-template-rows: 1fr 4fr 1fr 4fr;
 }
 
-#announcements {
+.announcements {
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -91,9 +90,19 @@ header {
     margin-right: 25px;
 }
 
-#announcements div {
-    border-bottom: 1px solid gray;
+.announcements > div > .announcement-title {
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+.announcements > div{
     margin-bottom: 20px;
+    font-size: 8pt;
+}
+
+.announcements-trending {
+    padding-top: 15px;
+    font-weight: bold;
 }
 
 a {
